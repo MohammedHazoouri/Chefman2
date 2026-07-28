@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شيف مان - Chef Man | بطل الجوع في طرطوس</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- استيراد خطوط عربية قوية تناسب الثيم -->
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&family=Bangers&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- شاشة التحميل (حقنة الجبن) -->
+    <div id="loader">
+        <div class="syringe-container">
+            <div class="syringe">💉</div>
+            <p>جاري حقن الجبن...</p>
+        </div>
+    </div>
+
+    <!-- القائمة العلوية -->
+    <nav>
+        <div class="logo">
+            <img src="logo.jpg" alt="Chef Man Logo">
+        </div>
+        <div class="nav-links" id="navLinks">
+            <ul>
+                <li><a href="#hero">الرئيسية</a></li>
+                <li><a href="#about">عن شيف مان</a></li>
+                <li><a href="#menu">المنيو</a></li>
+                <li><a href="#gallery">المطعم</a></li>
+                <li><a href="#contact">تواصل معنا</a></li>
+            </ul>
+        </div>
+        <div class="nav-actions">
+            <button class="order-btn">اطلب الآن!</button>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- قسم الهيرو (الرئيسي) -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1 class="comic-text">أقوى وجبات طرطوس بين يديك!</h1>
+            <p>شيف مان ينقذ الجائعين بوجباته الأسطورية وضخامتها.</p>
+            <a href="#menu" class="cta-button">اكتشف المنيو الأسطوري</a>
+        </div>
+        <div class="hero-image">
+            <img src="mascot_new.png" alt="Chef Man Mascot" class="floating-mascot">
+        </div>
+    </section>
+
+    <!-- قسم التعريف بالمطعم -->
+    <section id="about" class="about-section">
+        <div class="comic-card">
+            <h2 class="section-title">من هو شيف مان؟</h2>
+            <p>
+                الاسم مستوحى من فكرة "البطل الخارق"، ولكن هنا البطل الخارق هو "الشيف مان" الذي ينقذ الجائعين بوجباته الأسطورية. 
+                نحن لا نقدم مجرد طعام، بل نقدم تجربة بصرية ومذاقية لا تُنسى في قلب مدينة طرطوس.
+            </p>
+            <div class="features">
+                <div class="feature-item">🍔 أحجام ضخمة</div>
+                <div class="feature-item">💉 حقن الجبن</div>
+                <div class="feature-item">⚡ طاقة حيوية</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المنيو -->
+    <section id="menu" class="menu-section">
+        <h2 class="section-title">فصول المنيو الأسطوري</h2>
+        
+        <!-- أزرار الفلترة -->
+        <div class="menu-filters">
+            <button class="filter-btn active" data-filter="all">الكل</button>
+            <button class="filter-btn" data-filter="burger-fried">برغر مقلي</button>
+            <button class="filter-btn" data-filter="burger-grilled">برغر مشوي</button>
+            <button class="filter-btn" data-filter="meals">وجبات</button>
+        </div>
+
+        <div class="menu-grid">
+            <!-- برغر مشوي -->
+            <div class="menu-card" data-category="burger-grilled" data-price="45,000 ل.س" data-desc="برغر عملاق مشوي على اللهب مع 3 طبقات لحم وغرقان بجبنة الشيدر">
+                <div class="card-inner">
+                    <img src="burger_menu_1.png" alt="Super Man Burger">
+                    <h3>سوبر مان برغر</h3>
+                    <span class="pow-tag">POW!</span>
+                </div>
+            </div>
+            
+            <!-- برغر مقلي -->
+            <div class="menu-card" data-category="burger-fried" data-price="38,000 ل.س" data-desc="ساندويش دجاج مقرمش مقلي مع حقنة الجبن الخاصة">
+                <div class="card-inner">
+                    <img src="burger_menu_1.png" alt="Chicken Injector">
+                    <h3>تشيكن إنجيكتور</h3>
+                    <span class="pow-tag">BOOM!</span>
+                </div>
+            </div>
+
+            <!-- وجبات -->
+            <div class="menu-card" data-category="meals" data-price="55,000 ل.س" data-desc="وجبة التوفير الخارقة: برغر + بطاطا + مشروب + حقنة جبن">
+                <div class="card-inner">
+                    <img src="burger_menu_1.png" alt="Hero Meal">
+                    <h3>وجبة البطل</h3>
+                    <span class="pow-tag">SAVE!</span>
+                </div>
+            </div>
+
+            <!-- برغر مشوي -->
+            <div class="menu-card" data-category="burger-grilled" data-price="50,000 ل.س" data-desc="الوحش الضخم، أكبر برغر مشوي في طرطوس">
+                <div class="card-inner">
+                    <img src="burger_menu_1.png" alt="The Beast">
+                    <h3>ذا بيست (الوحش)</h3>
+                    <span class="pow-tag">ZAP!</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- نافذة المنيو المنبثقة (Modal) -->
+    <div id="menu-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <img id="modal-img" src="" alt="">
+                <div class="modal-info">
+                    <h2 id="modal-title"></h2>
+                    <p id="modal-desc"></p>
+                    <div class="price-tag" id="modal-price"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- قسم المعرض (صور المطعم) -->
+    <section id="gallery" class="gallery-section">
+        <h2 class="section-title">أجواء القاعدة عندنا</h2>
+        <div class="gallery-container">
+            <img src="restaurant_interior.png" alt="Restaurant Interior">
+            <div class="gallery-text">
+                <p>ديكورات نيون، رسومات كوميكس، وطاقة حيوية تناسب الشباب والعائلات.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم التوصيل والتواصل -->
+    <section id="contact" class="contact-section">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h2 class="section-title">اطلب النجدة! (التوصيل)</h2>
+                <p>📍 طرطوس - الشارع العام</p>
+                <p>📞 043-XXXXXXX</p>
+                <p>📱 09XXXXXXXX</p>
+                <div class="work-hours">
+                    <h3>ساعات الدوام</h3>
+                    <p>يومياً: 12:00 ظهراً - 12:00 ليلاً</p>
+                </div>
+            </div>
+            <div class="social-links">
+                <h3>تابع البطل على</h3>
+                <div class="icons">
+                    <span>Facebook</span>
+                    <span>Instagram</span>
+                    <span>WhatsApp</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; شيف مان 2026 - صُنع بكل حب (وجبن)</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
